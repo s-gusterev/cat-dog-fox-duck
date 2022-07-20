@@ -5,7 +5,7 @@ import { RiArrowGoBackFill } from 'react-icons/ri';
 
 function ButtonBack() {
   return (
-    <Link className='button-back main__button-back' to='/'>
+    <Link className='button-back main__button-back' to='/cat-dog-fox-duck'>
       <RiArrowGoBackFill />
     </Link>
   );
