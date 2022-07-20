@@ -1,19 +1,19 @@
 const list = [
   {
     name: 'Фото котиков',
-    url: '/cat',
+    url: '/cat-dog-fox-duck/cat',
   },
   {
     name: 'Фото собачек',
-    url: '/dog',
+    url: '/cat-dog-fox-duck/dog',
   },
   {
     name: 'Фото лисичек',
-    url: '/fox',
+    url: '/cat-dog-fox-duck/fox',
   },
   {
     name: 'Фото утят',
-    url: '/duck',
+    url: '/cat-dog-fox-duck/duck',
   },
 ];
 
