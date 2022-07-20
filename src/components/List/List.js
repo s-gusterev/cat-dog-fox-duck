@@ -1,7 +1,8 @@
 import React from 'react';
 import Item from '../Item/Item';
 import './List.css';
-import { motion } from 'framer-motion';
+const { motion } = require('framer-motion');
+// import { motion } from 'framer-motion/dist/es/index';
 import { list } from '../../utils/constans';
 
 function List() {

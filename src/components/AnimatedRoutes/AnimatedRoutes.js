@@ -6,7 +6,8 @@ import Content from '../Content/Content';
 // import cat from '../../images/cat.jpg';
 // import fox from '../../images/fox.jpg';
 // import duck from '../../images/duck.jpg';
-import { AnimatePresence } from 'framer-motion';
+const { AnimatePresence } = require('framer-motion');
+//import { AnimatePresence } from 'framer-motion/dist/es/index';
 
 function AnimatedRoutes(props) {
   const location = useLocation();

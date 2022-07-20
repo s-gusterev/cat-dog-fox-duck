@@ -5,7 +5,8 @@ import ButtonNext from '../ButtonNext/ButtonNext';
 import ButtonCopy from '../ButtonCopy/ButtonCopy';
 import Notification from '../Notification/Notification';
 //import { Route, Routes, Router } from 'react-router-dom';
-import { motion } from 'framer-motion';
+const { motion } = require('framer-motion');
+// import { motion } from 'framer-motion/dist/es/index';
 
 function Content(props) {
   return (
