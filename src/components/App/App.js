@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import './App.css';
 import Main from '../Main/Main';
 
-import { apiCat, apiDog, apiDuck, apiFox } from '../../utils/api';
+import { apiCat, apiDog, apiFox } from '../../utils/api';
 
 function App() {
   const [image, setImage] = useState('');
@@ -35,12 +35,6 @@ function App() {
       apiDog.getImage().then((res) => {
         console.log('qqqq');
         return setImage(res.message);
-      });
-    }
-    if (location.pathname === '/cat-dog-fox-duck/duck') {
-      apiDuck.getImage().then((res) => {
-        console.log('qqqq');
-        return setImage(res.url);
       });
     }
 

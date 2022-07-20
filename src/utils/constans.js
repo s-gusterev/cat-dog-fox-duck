@@ -11,10 +11,6 @@ const list = [
     name: 'Фото лисичек',
     url: '/cat-dog-fox-duck/fox',
   },
-  {
-    name: 'Фото утят',
-    url: '/cat-dog-fox-duck/duck',
-  },
 ];
 
 export { list };

@@ -36,16 +36,6 @@ function AnimatedRoutes(props) {
           }
         ></Route>
         <Route
-          path='/cat-dog-fox-duck/duck'
-          element={
-            <Content
-              img={props.img}
-              text='Кря'
-              clickButtonNext={props.clickButtonNext}
-            />
-          }
-        ></Route>
-        <Route
           path='/cat-dog-fox-duck/fox'
           element={
             <Content
