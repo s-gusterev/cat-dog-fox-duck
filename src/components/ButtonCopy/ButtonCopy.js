@@ -2,9 +2,13 @@ import React from 'react';
 import './ButtonCopy.css';
 import { MdOutlineCopyAll } from 'react-icons/md';
 
-function ButtonCopy() {
+function ButtonCopy(props) {
   return (
-    <button type='button' className='button-copy'>
+    <button
+      type='button'
+      className='button-copy'
+      onClick={props.clickButtonCopy}
+    >
       <MdOutlineCopyAll />
     </button>
   );

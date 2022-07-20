@@ -8,6 +8,7 @@ import { apiCat, apiDog, apiFox } from '../../utils/api';
 
 function App() {
   const [image, setImage] = useState('');
+  const [isCopy, setIsCopy] = useState(false);
   let location = useLocation();
 
   useEffect(() => {
@@ -21,32 +22,54 @@ function App() {
     };
   }, [location]);
 
-  console.log(image);
-
   function getPicture() {
     if (location.pathname === '/cat-dog-fox-duck/cat') {
       apiCat.getImage().then((res) => {
-        console.log('qqqq');
         return setImage(res.file);
       });
     }
 
     if (location.pathname === '/cat-dog-fox-duck/dog') {
       apiDog.getImage().then((res) => {
-        console.log('qqqq');
         return setImage(res.message);
       });
     }
 
     if (location.pathname === '/cat-dog-fox-duck/fox') {
       apiFox.getImage().then((res) => {
-        console.log('qqqq');
         return setImage(res.image);
       });
     }
   }
 
-  return <Main img={image} clickButtonNext={getPicture} />;
+  function copyLink() {
+    navigator.clipboard
+      .writeText(image)
+      .then(() => {
+        return setIsCopy(true);
+      })
+      .catch((err) => {
+        console.log('Ошибка', err);
+      });
+  }
+
+  useEffect(() => {
+    if (isCopy) {
+      const timeout = setTimeout(() => {
+        setIsCopy(false);
+      }, 3000);
+      return () => clearTimeout(timeout);
+    }
+  }, [isCopy]);
+
+  return (
+    <Main
+      img={image}
+      clickButtonNext={getPicture}
+      isCopy={isCopy}
+      clickButtonCopy={copyLink}
+    />
+  );
 }
 
 export default App;

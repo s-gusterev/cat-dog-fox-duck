@@ -10,7 +10,12 @@ function Main(props) {
   return (
     <main className='main'>
       {/* <Router> */}
-      <AnimatedRoutes img={props.img} clickButtonNext={props.clickButtonNext} />
+      <AnimatedRoutes
+        img={props.img}
+        clickButtonNext={props.clickButtonNext}
+        isCopy={props.isCopy}
+        clickButtonCopy={props.clickButtonCopy}
+      />
       {/* </Router> */}
     </main>
   );

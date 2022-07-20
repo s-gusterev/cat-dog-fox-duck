@@ -22,6 +22,8 @@ function AnimatedRoutes(props) {
               img={props.img}
               text='Гав'
               clickButtonNext={props.clickButtonNext}
+              isCopy={props.isCopy}
+              clickButtonCopy={props.clickButtonCopy}
             />
           }
         ></Route>
@@ -32,6 +34,8 @@ function AnimatedRoutes(props) {
               img={props.img}
               text='Кусь'
               clickButtonNext={props.clickButtonNext}
+              isCopy={props.isCopy}
+              clickButtonCopy={props.clickButtonCopy}
             />
           }
         ></Route>
@@ -42,6 +46,8 @@ function AnimatedRoutes(props) {
               img={props.img}
               text='Тяв'
               clickButtonNext={props.clickButtonNext}
+              isCopy={props.isCopy}
+              clickButtonCopy={props.clickButtonCopy}
             />
           }
         ></Route>

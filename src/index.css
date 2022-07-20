@@ -4,4 +4,5 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(90deg, #fb62f6, #645dd7);
+  overflow: hidden;
 }

@@ -3,15 +3,11 @@ class Api {
     this._baseUrl = baseUrl;
   }
 
-  // Проверяем ответ от сервера
   _checkResponse(res) {
     if (res.ok) {
-      // Если все ок - получаем первоначальный ответ от сервера
-      console.log(res);
-      // return res; // Читаем ответ в формате json
-      return res.json(); // Читаем ответ в формате json
+      return res.json();
     }
-    return Promise.reject(`Ошибка: ${res.status}`); // Если не ок возвращаем отклоненный промис с описанием ошибки
+    return Promise.reject(`Ошибка: ${res.status}`);
   }
 
   getImage() {

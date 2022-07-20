@@ -23,8 +23,8 @@ function Content(props) {
       <ButtonBack />
       <Picture img={props.img}></Picture>
       <ButtonNext text={props.text} clickButtonNext={props.clickButtonNext} />
-      <ButtonCopy />
-      <Notification />
+      <ButtonCopy clickButtonCopy={props.clickButtonCopy} />
+      <Notification isCopy={props.isCopy} />
     </motion.div>
   );
 }
