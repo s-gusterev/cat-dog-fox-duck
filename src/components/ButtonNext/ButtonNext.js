@@ -3,7 +3,11 @@ import './ButtonNext.css';
 
 function ButtonNext(props) {
   return (
-    <button type='button' className='button-next'>
+    <button
+      type='button'
+      className='button-next'
+      onClick={props.clickButtonNext}
+    >
       {props.text}
     </button>
   );

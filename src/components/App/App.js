@@ -1,11 +1,58 @@
-import React from 'react';
-//import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 import './App.css';
 import Main from '../Main/Main';
-//import { Router, Switch } from 'react-router-dom';
+
+import { apiCat, apiDog, apiDuck, apiFox } from '../../utils/api';
 
 function App() {
-  return <Main />;
+  const [image, setImage] = useState('');
+  let location = useLocation();
+
+  useEffect(() => {
+    getPicture();
+    if (location.pathname === '/') {
+      return setImage('');
+    }
+
+    return () => {
+      setImage('');
+    };
+  }, [location]);
+
+  console.log(image);
+
+  function getPicture() {
+    if (location.pathname === '/cat') {
+      apiCat.getImage().then((res) => {
+        console.log('qqqq');
+        return setImage(res.file);
+      });
+    }
+
+    if (location.pathname === '/dog') {
+      apiDog.getImage().then((res) => {
+        console.log('qqqq');
+        return setImage(res.message);
+      });
+    }
+    if (location.pathname === '/duck') {
+      apiDuck.getImage().then((res) => {
+        console.log('qqqq');
+        return setImage(res.url);
+      });
+    }
+
+    if (location.pathname === '/fox') {
+      apiFox.getImage().then((res) => {
+        console.log('qqqq');
+        return setImage(res.image);
+      });
+    }
+  }
+
+  return <Main img={image} clickButtonNext={getPicture} />;
 }
 
 export default App;

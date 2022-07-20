@@ -5,6 +5,7 @@
 }
 
 .item__link {
+  display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -26,7 +27,6 @@
     #645dd7 80%,
     #645dd7
   );
-  transition: all 10s;
 }
 
 /* .item__link::after {
