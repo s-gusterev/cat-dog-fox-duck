@@ -1,0 +1,16 @@
+.button-next {
+  background: linear-gradient(90deg, #f2ff49, #ff4242);
+  border: none;
+  color: #b3fffc;
+  font-size: 36px;
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: transform 150ms ease-in-out;
+  text-transform: uppercase;
+}
+
+.button-next:active {
+  transform: scale(1.1);
+}

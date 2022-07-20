@@ -1,0 +1,9 @@
+.notification_hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.notification_visible {
+  visibility: visible;
+  opacity: 1;
+}

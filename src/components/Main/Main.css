@@ -10,3 +10,18 @@
   margin-left: 20px;
   margin-bottom: 30px;
 }
+
+.main__animation-enter {
+  opacity: 0;
+}
+.main__animation-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.main__animation-exit {
+  opacity: 1;
+}
+.main__animation-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}

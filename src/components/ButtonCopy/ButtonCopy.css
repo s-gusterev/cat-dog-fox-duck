@@ -1,0 +1,15 @@
+.button-copy {
+  background-color: transparent;
+  border: none;
+  font-size: 42px;
+  color: #ff4242;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+.button-copy:hover {
+  transform: scale(1.1);
+}
+
+.button-copy:active {
+  transform: scale(1.5);
+}
