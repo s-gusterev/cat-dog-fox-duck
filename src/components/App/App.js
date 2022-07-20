@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     getPicture();
-    if (location.pathname === '/cat-dog-fox-duck/') {
+    if (location.pathname === '/') {
       return setImage('');
     }
 
@@ -23,19 +23,19 @@ function App() {
   }, [location]);
 
   function getPicture() {
-    if (location.pathname === '/cat-dog-fox-duck/cat') {
+    if (location.pathname === '/cat') {
       apiCat.getImage().then((res) => {
         return setImage(res.file);
       });
     }
 
-    if (location.pathname === '/cat-dog-fox-duck/dog') {
+    if (location.pathname === '/dog') {
       apiDog.getImage().then((res) => {
         return setImage(res.message);
       });
     }
 
-    if (location.pathname === '/cat-dog-fox-duck/fox') {
+    if (location.pathname === '/fox') {
       apiFox.getImage().then((res) => {
         return setImage(res.image);
       });

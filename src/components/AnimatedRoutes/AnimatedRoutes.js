@@ -14,9 +14,9 @@ function AnimatedRoutes(props) {
   return (
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
-        <Route exact path='/cat-dog-fox-duck' element={<List />}></Route>
+        <Route exact path='/' element={<List />}></Route>
         <Route
-          path='/cat-dog-fox-duck/dog'
+          path='/dog'
           element={
             <Content
               img={props.img}
@@ -28,7 +28,7 @@ function AnimatedRoutes(props) {
           }
         ></Route>
         <Route
-          path='/cat-dog-fox-duck/cat'
+          path='/cat'
           element={
             <Content
               img={props.img}
@@ -40,7 +40,7 @@ function AnimatedRoutes(props) {
           }
         ></Route>
         <Route
-          path='/cat-dog-fox-duck/fox'
+          path='/fox'
           element={
             <Content
               img={props.img}
