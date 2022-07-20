@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/cat-dog-fox-duck/static/css/main.4ad1e81d.css",
-    "main.js": "/cat-dog-fox-duck/static/js/main.408d0988.js",
+    "main.js": "/cat-dog-fox-duck/static/js/main.dcfb53c9.js",
     "index.html": "/cat-dog-fox-duck/index.html",
     "main.4ad1e81d.css.map": "/cat-dog-fox-duck/static/css/main.4ad1e81d.css.map",
-    "main.408d0988.js.map": "/cat-dog-fox-duck/static/js/main.408d0988.js.map"
+    "main.dcfb53c9.js.map": "/cat-dog-fox-duck/static/js/main.dcfb53c9.js.map"
   },
   "entrypoints": [
     "static/css/main.4ad1e81d.css",
-    "static/js/main.408d0988.js"
+    "static/js/main.dcfb53c9.js"
   ]
 }
