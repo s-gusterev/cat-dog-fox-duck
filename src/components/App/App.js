@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import dog from '../../images/dog.jpg';
+import cat from '../../images/cat.jpg';
+import fox from '../../images/fox.jpg';
 
 import './App.css';
 import Main from '../Main/Main';
@@ -14,9 +17,21 @@ function App() {
   useEffect(() => {
     getPicture();
     if (location.pathname === '/') {
+      document.title = 'Фотки  котиков, собачек и лисичек';
       return setImage('');
     }
-
+    if (location.pathname === '/cat') {
+      document.title = 'Фотографии котов, котиков и котят';
+      return setImage(cat);
+    }
+    if (location.pathname === '/dog') {
+      document.title = 'Фотографии   собак, песиков и щенят';
+      return setImage(dog);
+    }
+    if (location.pathname === '/fox') {
+      document.title = 'Фотографии  лис, лисичек и лисят';
+      return setImage(fox);
+    }
     return () => {
       setImage('');
     };
