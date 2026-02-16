@@ -4,22 +4,12 @@ import './Item.css';
 
 const Item = React.forwardRef((props, ref) => {
   return (
-    <li className='item'>
-      <Link className='item__link' to={props.link} ref={ref}>
+    <li className="item">
+      <Link className="item__link" to={props.link} ref={ref}>
         {props.name}
       </Link>
     </li>
   );
 });
-
-// function Item(props) {
-//   return (
-//     <li className='item'>
-//       <Link className='item__link' to={props.link}>
-//         {props.name}
-//       </Link>
-//     </li>
-//   );
-// }
 
 export default Item;
