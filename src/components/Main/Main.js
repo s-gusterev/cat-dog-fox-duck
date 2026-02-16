@@ -8,13 +8,14 @@ import AnimatedRoutes from '../AnimatedRoutes/AnimatedRoutes';
 
 function Main(props) {
   return (
-    <main className='main'>
+    <main className="main">
       {/* <Router> */}
       <AnimatedRoutes
         img={props.img}
         clickButtonNext={props.clickButtonNext}
         isCopy={props.isCopy}
         clickButtonCopy={props.clickButtonCopy}
+        isLoading={props.isLoading}
       />
       {/* </Router> */}
     </main>

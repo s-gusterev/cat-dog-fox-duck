@@ -1,5 +1,6 @@
 import React from 'react';
 import Picture from '../Picture/Picture';
+import Loader from '../Loader/Loader';
 import ButtonBack from '../ButtonBack/ButtonBack';
 import ButtonNext from '../ButtonNext/ButtonNext';
 import ButtonCopy from '../ButtonCopy/ButtonCopy';
@@ -11,7 +12,7 @@ const { motion } = require('framer-motion');
 function Content(props) {
   return (
     <motion.div
-      className='main__container'
+      className="main__container"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1 } }}
       exit={{
@@ -21,7 +22,7 @@ function Content(props) {
       }}
     >
       <ButtonBack />
-      <Picture img={props.img}></Picture>
+      {props.isLoading ? <Loader /> : <Picture img={props.img}></Picture>}
       <ButtonNext text={props.text} clickButtonNext={props.clickButtonNext} />
       <ButtonCopy clickButtonCopy={props.clickButtonCopy} />
       <Notification isCopy={props.isCopy} />

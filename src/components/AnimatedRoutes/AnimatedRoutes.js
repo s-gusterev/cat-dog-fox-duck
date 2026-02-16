@@ -14,40 +14,43 @@ function AnimatedRoutes(props) {
   return (
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
-        <Route exact path='/' element={<List />}></Route>
+        <Route exact path="/" element={<List />}></Route>
         <Route
-          path='/dog'
+          path="/dog"
           element={
             <Content
               img={props.img}
-              text='Гав'
+              text="Гав"
               clickButtonNext={props.clickButtonNext}
               isCopy={props.isCopy}
               clickButtonCopy={props.clickButtonCopy}
+              isLoading={props.isLoading}
             />
           }
         ></Route>
         <Route
-          path='/cat'
+          path="/cat"
           element={
             <Content
               img={props.img}
-              text='Кусь'
+              text="Кусь"
               clickButtonNext={props.clickButtonNext}
               isCopy={props.isCopy}
               clickButtonCopy={props.clickButtonCopy}
+              isLoading={props.isLoading}
             />
           }
         ></Route>
         <Route
-          path='/fox'
+          path="/fox"
           element={
             <Content
               img={props.img}
-              text='Тяв'
+              text="Тяв"
               clickButtonNext={props.clickButtonNext}
               isCopy={props.isCopy}
               clickButtonCopy={props.clickButtonCopy}
+              isLoading={props.isLoading}
             />
           }
         ></Route>
