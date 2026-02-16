@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cat-dog-fox-duck/static/css/main.4920d7fb.css",
-    "main.js": "/cat-dog-fox-duck/static/js/main.ccd20c3b.js",
+    "main.css": "/cat-dog-fox-duck/static/css/main.aa013f01.css",
+    "main.js": "/cat-dog-fox-duck/static/js/main.3f91b01d.js",
     "static/media/dog.jpg": "/cat-dog-fox-duck/static/media/dog.ecf9c3f94b2666a628da.jpg",
     "static/media/fox.jpg": "/cat-dog-fox-duck/static/media/fox.bfe55d3ee36554c21bb9.jpg",
     "static/media/cat.jpg": "/cat-dog-fox-duck/static/media/cat.9245cade195100487611.jpg",
     "index.html": "/cat-dog-fox-duck/index.html",
-    "main.4920d7fb.css.map": "/cat-dog-fox-duck/static/css/main.4920d7fb.css.map",
-    "main.ccd20c3b.js.map": "/cat-dog-fox-duck/static/js/main.ccd20c3b.js.map"
+    "main.aa013f01.css.map": "/cat-dog-fox-duck/static/css/main.aa013f01.css.map",
+    "main.3f91b01d.js.map": "/cat-dog-fox-duck/static/js/main.3f91b01d.js.map"
   },
   "entrypoints": [
-    "static/css/main.4920d7fb.css",
-    "static/js/main.ccd20c3b.js"
+    "static/css/main.aa013f01.css",
+    "static/js/main.3f91b01d.js"
   ]
 }
