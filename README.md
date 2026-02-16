@@ -30,4 +30,4 @@ npm run build
 
 ## Деплой
 
-Проект развёрнут на [GitHub Pages](http://gusterev.github.io/cat-dog-fox-duck)
+Проект развёрнут на [GitHub Pages](https://s-gusterev.github.io/cat-dog-fox-duck/)
