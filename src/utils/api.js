@@ -16,7 +16,7 @@ class Api {
 }
 
 const apiCat = new Api({
-  baseUrl: 'https://aws.random.cat/meow',
+  baseUrl: 'https://api.thecatapi.com/v1/images/search',
 });
 const apiDog = new Api({
   baseUrl: 'https://dog.ceo/api/breeds/image/random',

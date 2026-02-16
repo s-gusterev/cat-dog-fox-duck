@@ -40,7 +40,7 @@ function App() {
   function getPicture() {
     if (location.pathname === '/cat') {
       apiCat.getImage().then((res) => {
-        return setImage(res.file);
+        return setImage(res[0].url);
       });
     }
 
